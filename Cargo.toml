@@ -1,0 +1,14 @@
+[package]
+name = "vdpau-sys"
+version = "0.0.1"
+edition = "2018"
+authors = ["luozijun <luozijun.assistant@gmail.com>"]
+description = " Bindings to nvidia VDPAU for linux and some bsd-like system"
+license = "MIT"
+homepage   = "https://github.com/luozijun/rust-vdpau-sys"
+repository = "https://github.com/luozijun/rust-vdpau-sys"
+documentation = "https://docs.rs/vdpau-sys"
+
+[dependencies]
+libc = "0.2"
+x11 = { version = "2.18", features = [ "xlib" ] }
