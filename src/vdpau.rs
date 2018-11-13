@@ -1,65 +1,68 @@
-pub const VDP_TRUE: ::std::os::raw::c_uint = 1;
-pub const VDP_FALSE: ::std::os::raw::c_uint = 0;
-pub const VDP_INVALID_HANDLE: ::std::os::raw::c_uint = 4294967295;
-pub const VDPAU_INTERFACE_VERSION: ::std::os::raw::c_uint = 1;
-pub const VDPAU_VERSION: ::std::os::raw::c_uint = 1;
-pub const VDP_PROCAMP_VERSION: ::std::os::raw::c_uint = 0;
-pub const VDP_OUTPUT_SURFACE_RENDER_BLEND_STATE_VERSION: ::std::os::raw::c_uint = 0;
-pub const VDP_OUTPUT_SURFACE_RENDER_ROTATE_0: ::std::os::raw::c_uint = 0;
-pub const VDP_OUTPUT_SURFACE_RENDER_ROTATE_90: ::std::os::raw::c_uint = 1;
-pub const VDP_OUTPUT_SURFACE_RENDER_ROTATE_180: ::std::os::raw::c_uint = 2;
-pub const VDP_OUTPUT_SURFACE_RENDER_ROTATE_270: ::std::os::raw::c_uint = 3;
-pub const VDP_OUTPUT_SURFACE_RENDER_COLOR_PER_VERTEX: ::std::os::raw::c_uint = 4;
-pub const VDP_DECODER_LEVEL_MPEG1_NA: ::std::os::raw::c_uint = 0;
-pub const VDP_DECODER_LEVEL_MPEG2_LL: ::std::os::raw::c_uint = 0;
-pub const VDP_DECODER_LEVEL_MPEG2_ML: ::std::os::raw::c_uint = 1;
-pub const VDP_DECODER_LEVEL_MPEG2_HL14: ::std::os::raw::c_uint = 2;
-pub const VDP_DECODER_LEVEL_MPEG2_HL: ::std::os::raw::c_uint = 3;
-pub const VDP_DECODER_LEVEL_H264_1: ::std::os::raw::c_uint = 10;
-pub const VDP_DECODER_LEVEL_H264_1b: ::std::os::raw::c_uint = 9;
-pub const VDP_DECODER_LEVEL_H264_1_1: ::std::os::raw::c_uint = 11;
-pub const VDP_DECODER_LEVEL_H264_1_2: ::std::os::raw::c_uint = 12;
-pub const VDP_DECODER_LEVEL_H264_1_3: ::std::os::raw::c_uint = 13;
-pub const VDP_DECODER_LEVEL_H264_2: ::std::os::raw::c_uint = 20;
-pub const VDP_DECODER_LEVEL_H264_2_1: ::std::os::raw::c_uint = 21;
-pub const VDP_DECODER_LEVEL_H264_2_2: ::std::os::raw::c_uint = 22;
-pub const VDP_DECODER_LEVEL_H264_3: ::std::os::raw::c_uint = 30;
-pub const VDP_DECODER_LEVEL_H264_3_1: ::std::os::raw::c_uint = 31;
-pub const VDP_DECODER_LEVEL_H264_3_2: ::std::os::raw::c_uint = 32;
-pub const VDP_DECODER_LEVEL_H264_4: ::std::os::raw::c_uint = 40;
-pub const VDP_DECODER_LEVEL_H264_4_1: ::std::os::raw::c_uint = 41;
-pub const VDP_DECODER_LEVEL_H264_4_2: ::std::os::raw::c_uint = 42;
-pub const VDP_DECODER_LEVEL_H264_5: ::std::os::raw::c_uint = 50;
-pub const VDP_DECODER_LEVEL_H264_5_1: ::std::os::raw::c_uint = 51;
-pub const VDP_DECODER_LEVEL_VC1_SIMPLE_LOW: ::std::os::raw::c_uint = 0;
-pub const VDP_DECODER_LEVEL_VC1_SIMPLE_MEDIUM: ::std::os::raw::c_uint = 1;
-pub const VDP_DECODER_LEVEL_VC1_MAIN_LOW: ::std::os::raw::c_uint = 0;
-pub const VDP_DECODER_LEVEL_VC1_MAIN_MEDIUM: ::std::os::raw::c_uint = 1;
-pub const VDP_DECODER_LEVEL_VC1_MAIN_HIGH: ::std::os::raw::c_uint = 2;
-pub const VDP_DECODER_LEVEL_VC1_ADVANCED_L0: ::std::os::raw::c_uint = 0;
-pub const VDP_DECODER_LEVEL_VC1_ADVANCED_L1: ::std::os::raw::c_uint = 1;
-pub const VDP_DECODER_LEVEL_VC1_ADVANCED_L2: ::std::os::raw::c_uint = 2;
-pub const VDP_DECODER_LEVEL_VC1_ADVANCED_L3: ::std::os::raw::c_uint = 3;
-pub const VDP_DECODER_LEVEL_VC1_ADVANCED_L4: ::std::os::raw::c_uint = 4;
-pub const VDP_DECODER_LEVEL_MPEG4_PART2_SP_L0: ::std::os::raw::c_uint = 0;
-pub const VDP_DECODER_LEVEL_MPEG4_PART2_SP_L1: ::std::os::raw::c_uint = 1;
-pub const VDP_DECODER_LEVEL_MPEG4_PART2_SP_L2: ::std::os::raw::c_uint = 2;
-pub const VDP_DECODER_LEVEL_MPEG4_PART2_SP_L3: ::std::os::raw::c_uint = 3;
-pub const VDP_DECODER_LEVEL_MPEG4_PART2_ASP_L0: ::std::os::raw::c_uint = 0;
-pub const VDP_DECODER_LEVEL_MPEG4_PART2_ASP_L1: ::std::os::raw::c_uint = 1;
-pub const VDP_DECODER_LEVEL_MPEG4_PART2_ASP_L2: ::std::os::raw::c_uint = 2;
-pub const VDP_DECODER_LEVEL_MPEG4_PART2_ASP_L3: ::std::os::raw::c_uint = 3;
-pub const VDP_DECODER_LEVEL_MPEG4_PART2_ASP_L4: ::std::os::raw::c_uint = 4;
-pub const VDP_DECODER_LEVEL_MPEG4_PART2_ASP_L5: ::std::os::raw::c_uint = 5;
-pub const VDP_DECODER_LEVEL_DIVX_NA: ::std::os::raw::c_uint = 0;
-pub const VDP_BITSTREAM_BUFFER_VERSION: ::std::os::raw::c_uint = 0;
-pub const VDP_LAYER_VERSION: ::std::os::raw::c_uint = 0;
-pub const VDP_FUNC_ID_BASE_WINSYS: ::std::os::raw::c_uint = 4096;
+use crate::libc;
+
+
+pub const VDP_TRUE: libc::c_uint = 1;
+pub const VDP_FALSE: libc::c_uint = 0;
+pub const VDP_INVALID_HANDLE: libc::c_uint = 4294967295;
+pub const VDPAU_INTERFACE_VERSION: libc::c_uint = 1;
+pub const VDPAU_VERSION: libc::c_uint = 1;
+pub const VDP_PROCAMP_VERSION: libc::c_uint = 0;
+pub const VDP_OUTPUT_SURFACE_RENDER_BLEND_STATE_VERSION: libc::c_uint = 0;
+pub const VDP_OUTPUT_SURFACE_RENDER_ROTATE_0: libc::c_uint = 0;
+pub const VDP_OUTPUT_SURFACE_RENDER_ROTATE_90: libc::c_uint = 1;
+pub const VDP_OUTPUT_SURFACE_RENDER_ROTATE_180: libc::c_uint = 2;
+pub const VDP_OUTPUT_SURFACE_RENDER_ROTATE_270: libc::c_uint = 3;
+pub const VDP_OUTPUT_SURFACE_RENDER_COLOR_PER_VERTEX: libc::c_uint = 4;
+pub const VDP_DECODER_LEVEL_MPEG1_NA: libc::c_uint = 0;
+pub const VDP_DECODER_LEVEL_MPEG2_LL: libc::c_uint = 0;
+pub const VDP_DECODER_LEVEL_MPEG2_ML: libc::c_uint = 1;
+pub const VDP_DECODER_LEVEL_MPEG2_HL14: libc::c_uint = 2;
+pub const VDP_DECODER_LEVEL_MPEG2_HL: libc::c_uint = 3;
+pub const VDP_DECODER_LEVEL_H264_1: libc::c_uint = 10;
+pub const VDP_DECODER_LEVEL_H264_1b: libc::c_uint = 9;
+pub const VDP_DECODER_LEVEL_H264_1_1: libc::c_uint = 11;
+pub const VDP_DECODER_LEVEL_H264_1_2: libc::c_uint = 12;
+pub const VDP_DECODER_LEVEL_H264_1_3: libc::c_uint = 13;
+pub const VDP_DECODER_LEVEL_H264_2: libc::c_uint = 20;
+pub const VDP_DECODER_LEVEL_H264_2_1: libc::c_uint = 21;
+pub const VDP_DECODER_LEVEL_H264_2_2: libc::c_uint = 22;
+pub const VDP_DECODER_LEVEL_H264_3: libc::c_uint = 30;
+pub const VDP_DECODER_LEVEL_H264_3_1: libc::c_uint = 31;
+pub const VDP_DECODER_LEVEL_H264_3_2: libc::c_uint = 32;
+pub const VDP_DECODER_LEVEL_H264_4: libc::c_uint = 40;
+pub const VDP_DECODER_LEVEL_H264_4_1: libc::c_uint = 41;
+pub const VDP_DECODER_LEVEL_H264_4_2: libc::c_uint = 42;
+pub const VDP_DECODER_LEVEL_H264_5: libc::c_uint = 50;
+pub const VDP_DECODER_LEVEL_H264_5_1: libc::c_uint = 51;
+pub const VDP_DECODER_LEVEL_VC1_SIMPLE_LOW: libc::c_uint = 0;
+pub const VDP_DECODER_LEVEL_VC1_SIMPLE_MEDIUM: libc::c_uint = 1;
+pub const VDP_DECODER_LEVEL_VC1_MAIN_LOW: libc::c_uint = 0;
+pub const VDP_DECODER_LEVEL_VC1_MAIN_MEDIUM: libc::c_uint = 1;
+pub const VDP_DECODER_LEVEL_VC1_MAIN_HIGH: libc::c_uint = 2;
+pub const VDP_DECODER_LEVEL_VC1_ADVANCED_L0: libc::c_uint = 0;
+pub const VDP_DECODER_LEVEL_VC1_ADVANCED_L1: libc::c_uint = 1;
+pub const VDP_DECODER_LEVEL_VC1_ADVANCED_L2: libc::c_uint = 2;
+pub const VDP_DECODER_LEVEL_VC1_ADVANCED_L3: libc::c_uint = 3;
+pub const VDP_DECODER_LEVEL_VC1_ADVANCED_L4: libc::c_uint = 4;
+pub const VDP_DECODER_LEVEL_MPEG4_PART2_SP_L0: libc::c_uint = 0;
+pub const VDP_DECODER_LEVEL_MPEG4_PART2_SP_L1: libc::c_uint = 1;
+pub const VDP_DECODER_LEVEL_MPEG4_PART2_SP_L2: libc::c_uint = 2;
+pub const VDP_DECODER_LEVEL_MPEG4_PART2_SP_L3: libc::c_uint = 3;
+pub const VDP_DECODER_LEVEL_MPEG4_PART2_ASP_L0: libc::c_uint = 0;
+pub const VDP_DECODER_LEVEL_MPEG4_PART2_ASP_L1: libc::c_uint = 1;
+pub const VDP_DECODER_LEVEL_MPEG4_PART2_ASP_L2: libc::c_uint = 2;
+pub const VDP_DECODER_LEVEL_MPEG4_PART2_ASP_L3: libc::c_uint = 3;
+pub const VDP_DECODER_LEVEL_MPEG4_PART2_ASP_L4: libc::c_uint = 4;
+pub const VDP_DECODER_LEVEL_MPEG4_PART2_ASP_L5: libc::c_uint = 5;
+pub const VDP_DECODER_LEVEL_DIVX_NA: libc::c_uint = 0;
+pub const VDP_BITSTREAM_BUFFER_VERSION: libc::c_uint = 0;
+pub const VDP_LAYER_VERSION: libc::c_uint = 0;
+pub const VDP_FUNC_ID_BASE_WINSYS: libc::c_uint = 4096;
 
 
 /// \brief A boolean value, holding \ref VDP_TRUE or \ref
 /// VDP_FALSE.
-pub type VdpBool = ::std::os::raw::c_int;
+pub type VdpBool = libc::c_int;
 /// \brief The set of all chroma formats for \ref VdpVideoSurface
 /// "VdpVideoSurface"s.
 pub type VdpChromaType = u32;
@@ -142,7 +145,7 @@ pub const VDP_STATUS_INVALID_STRUCT_VERSION: VdpStatus = 22;
 pub const VDP_STATUS_RESOURCES: VdpStatus = 23;
 pub const VDP_STATUS_HANDLE_DEVICE_MISMATCH: VdpStatus = 24;
 pub const VDP_STATUS_ERROR: VdpStatus = 25;
-pub type VdpStatus = ::std::os::raw::c_uint;
+pub type VdpStatus = libc::c_uint;
 /// \brief Retrieve a string describing an error code.
 /// \param[in] status The error code.
 /// \return A pointer to the string. Note that this is a
@@ -151,12 +154,12 @@ pub type VdpStatus = ::std::os::raw::c_uint;
 /// pointer is valid as long as the VDPAU implementation is
 /// present within the application's address space.
 pub type VdpGetErrorString =
-    ::std::option::Option<unsafe extern "C" fn(status: VdpStatus) -> *const ::std::os::raw::c_char>;
+    Option<unsafe extern "C" fn(status: VdpStatus) -> *const libc::c_char>;
 /// \brief Retrieve the VDPAU version implemented by the backend.
 /// \param[out] api_version The API version.
 /// \return VdpStatus The completion status of the operation.
 pub type VdpGetApiVersion =
-    ::std::option::Option<unsafe extern "C" fn(api_version: *mut u32) -> VdpStatus>;
+    Option<unsafe extern "C" fn(api_version: *mut u32) -> VdpStatus>;
 /// \brief Retrieve an implementation-specific string description
 /// of the implementation. This typically includes detailed version
 /// information.
@@ -172,8 +175,8 @@ pub type VdpGetApiVersion =
 /// reporting. It is not intended that the application should
 /// parse this string in order to determine any information about
 /// the implementation.
-pub type VdpGetInformationString = ::std::option::Option<
-    unsafe extern "C" fn(information_string: *mut *const ::std::os::raw::c_char) -> VdpStatus,
+pub type VdpGetInformationString = Option<
+    unsafe extern "C" fn(information_string: *mut *const libc::c_char) -> VdpStatus,
 >;
 /// \brief  An opaque handle representing a VdpDevice object.
 pub type VdpDevice = u32;
@@ -181,7 +184,7 @@ pub type VdpDevice = u32;
 /// \param[in] device The device to destroy.
 /// \return VdpStatus The completion status of the operation.
 pub type VdpDeviceDestroy =
-    ::std::option::Option<unsafe extern "C" fn(device: VdpDevice) -> VdpStatus>;
+    Option<unsafe extern "C" fn(device: VdpDevice) -> VdpStatus>;
 /// \brief Storage for a color space conversion matrix.
 ///
 /// Note that the application may choose to construct the matrix
@@ -240,7 +243,7 @@ pub type VdpColorStandard = u32;
 /// \param[in] standard The YCbCr color space to convert from.
 /// \param[out] csc_matrix The CSC matrix to initialize.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpGenerateCSCMatrix = ::std::option::Option<
+pub type VdpGenerateCSCMatrix = Option<
     unsafe extern "C" fn(
         procamp: *mut VdpProcamp,
         standard: VdpColorStandard,
@@ -258,7 +261,7 @@ pub type VdpGenerateCSCMatrix = ::std::option::Option<
 /// \param[out] max_height The maximum supported surface height
 /// for this chroma type.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpVideoSurfaceQueryCapabilities = ::std::option::Option<
+pub type VdpVideoSurfaceQueryCapabilities = Option<
     unsafe extern "C" fn(
         device: VdpDevice,
         surface_chroma_type: VdpChromaType,
@@ -276,7 +279,7 @@ pub type VdpVideoSurfaceQueryCapabilities = ::std::option::Option<
 /// buffer for which information is requested.
 /// \param[out] is_supported Is this chroma type supported?
 /// \return VdpStatus The completion status of the operation.
-pub type VdpVideoSurfaceQueryGetPutBitsYCbCrCapabilities = ::std::option::Option<
+pub type VdpVideoSurfaceQueryGetPutBitsYCbCrCapabilities = Option<
     unsafe extern "C" fn(
         device: VdpDevice,
         surface_chroma_type: VdpChromaType,
@@ -330,7 +333,7 @@ pub type VdpVideoSurface = u32;
 /// For this reason, applications may need to call
 /// \ref VdpVideoSurfaceGetParameters after creation, in order to retrieve the
 /// actual surface size.
-pub type VdpVideoSurfaceCreate = ::std::option::Option<
+pub type VdpVideoSurfaceCreate = Option<
     unsafe extern "C" fn(
         device: VdpDevice,
         chroma_type: VdpChromaType,
@@ -343,7 +346,7 @@ pub type VdpVideoSurfaceCreate = ::std::option::Option<
 /// \param[in] surface The surface's handle.
 /// \return VdpStatus The completion status of the operation.
 pub type VdpVideoSurfaceDestroy =
-    ::std::option::Option<unsafe extern "C" fn(surface: VdpVideoSurface) -> VdpStatus>;
+    Option<unsafe extern "C" fn(surface: VdpVideoSurface) -> VdpStatus>;
 /// \brief Retrieve the parameters used to create a
 /// VdpVideoSurface.
 /// \param[in] surface The surface's handle.
@@ -351,7 +354,7 @@ pub type VdpVideoSurfaceDestroy =
 /// \param[out] width The width of the surface.
 /// \param[out] height The height of the surface.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpVideoSurfaceGetParameters = ::std::option::Option<
+pub type VdpVideoSurfaceGetParameters = Option<
     unsafe extern "C" fn(
         surface: VdpVideoSurface,
         chroma_type: *mut VdpChromaType,
@@ -375,11 +378,11 @@ pub type VdpVideoSurfaceGetParameters = ::std::option::Option<
 /// destination_format parameter will define how many
 /// planes are required.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpVideoSurfaceGetBitsYCbCr = ::std::option::Option<
+pub type VdpVideoSurfaceGetBitsYCbCr = Option<
     unsafe extern "C" fn(
         surface: VdpVideoSurface,
         destination_ycbcr_format: VdpYCbCrFormat,
-        destination_data: *const *const ::std::os::raw::c_void,
+        destination_data: *const *const libc::c_void,
         destination_pitches: *const u32,
     ) -> VdpStatus,
 >;
@@ -399,11 +402,11 @@ pub type VdpVideoSurfaceGetBitsYCbCr = ::std::option::Option<
 /// source_format parameter will define how many
 /// planes are required.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpVideoSurfacePutBitsYCbCr = ::std::option::Option<
+pub type VdpVideoSurfacePutBitsYCbCr = Option<
     unsafe extern "C" fn(
         surface: VdpVideoSurface,
         source_ycbcr_format: VdpYCbCrFormat,
-        source_data: *const *const ::std::os::raw::c_void,
+        source_data: *const *const libc::c_void,
         source_pitches: *const u32,
     ) -> VdpStatus,
 >;
@@ -421,7 +424,7 @@ pub type VdpColorTableFormat = u32;
 /// \param[out] max_height The maximum supported surface height
 /// for this chroma type.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpOutputSurfaceQueryCapabilities = ::std::option::Option<
+pub type VdpOutputSurfaceQueryCapabilities = Option<
     unsafe extern "C" fn(
         device: VdpDevice,
         surface_rgba_format: VdpRGBAFormat,
@@ -438,7 +441,7 @@ pub type VdpOutputSurfaceQueryCapabilities = ::std::option::Option<
 /// which information is requested.
 /// \param[out] is_supported Is this surface format supported?
 /// \return VdpStatus The completion status of the operation.
-pub type VdpOutputSurfaceQueryGetPutBitsNativeCapabilities = ::std::option::Option<
+pub type VdpOutputSurfaceQueryGetPutBitsNativeCapabilities = Option<
     unsafe extern "C" fn(
         device: VdpDevice,
         surface_rgba_format: VdpRGBAFormat,
@@ -457,7 +460,7 @@ pub type VdpOutputSurfaceQueryGetPutBitsNativeCapabilities = ::std::option::Opti
 /// table.
 /// \param[out] is_supported Is this surface format supported?
 /// \return VdpStatus The completion status of the operation.
-pub type VdpOutputSurfaceQueryPutBitsIndexedCapabilities = ::std::option::Option<
+pub type VdpOutputSurfaceQueryPutBitsIndexedCapabilities = Option<
     unsafe extern "C" fn(
         device: VdpDevice,
         surface_rgba_format: VdpRGBAFormat,
@@ -476,7 +479,7 @@ pub type VdpOutputSurfaceQueryPutBitsIndexedCapabilities = ::std::option::Option
 /// data buffer.
 /// \param[out] is_supported Is this surface format supported?
 /// \return VdpStatus The completion status of the operation.
-pub type VdpOutputSurfaceQueryPutBitsYCbCrCapabilities = ::std::option::Option<
+pub type VdpOutputSurfaceQueryPutBitsYCbCrCapabilities = Option<
     unsafe extern "C" fn(
         device: VdpDevice,
         surface_rgba_format: VdpRGBAFormat,
@@ -497,7 +500,7 @@ pub type VdpOutputSurface = u32;
 ///
 /// The memory backing the surface will be initialized to 0 color
 /// and 0 alpha (i.e. black.)
-pub type VdpOutputSurfaceCreate = ::std::option::Option<
+pub type VdpOutputSurfaceCreate = Option<
     unsafe extern "C" fn(
         device: VdpDevice,
         rgba_format: VdpRGBAFormat,
@@ -510,7 +513,7 @@ pub type VdpOutputSurfaceCreate = ::std::option::Option<
 /// \param[in] surface The surface's handle.
 /// \return VdpStatus The completion status of the operation.
 pub type VdpOutputSurfaceDestroy =
-    ::std::option::Option<unsafe extern "C" fn(surface: VdpOutputSurface) -> VdpStatus>;
+    Option<unsafe extern "C" fn(surface: VdpOutputSurface) -> VdpStatus>;
 /// \brief Retrieve the parameters used to create a
 /// VdpOutputSurface.
 /// \param[in] surface The surface's handle.
@@ -518,7 +521,7 @@ pub type VdpOutputSurfaceDestroy =
 /// \param[out] width The width of the surface.
 /// \param[out] height The height of the surface.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpOutputSurfaceGetParameters = ::std::option::Option<
+pub type VdpOutputSurfaceGetParameters = Option<
     unsafe extern "C" fn(
         surface: VdpOutputSurface,
         rgba_format: *mut VdpRGBAFormat,
@@ -543,11 +546,11 @@ pub type VdpOutputSurfaceGetParameters = ::std::option::Option<
 /// destination_format parameter will define how many
 /// planes are required.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpOutputSurfaceGetBitsNative = ::std::option::Option<
+pub type VdpOutputSurfaceGetBitsNative = Option<
     unsafe extern "C" fn(
         surface: VdpOutputSurface,
         source_rect: *const VdpRect,
-        destination_data: *const *const ::std::os::raw::c_void,
+        destination_data: *const *const libc::c_void,
         destination_pitches: *const u32,
     ) -> VdpStatus,
 >;
@@ -568,10 +571,10 @@ pub type VdpOutputSurfaceGetBitsNative = ::std::option::Option<
 /// to fill with application data. If NULL, the entire
 /// surface will be updated.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpOutputSurfacePutBitsNative = ::std::option::Option<
+pub type VdpOutputSurfacePutBitsNative = Option<
     unsafe extern "C" fn(
         surface: VdpOutputSurface,
-        source_data: *const *const ::std::os::raw::c_void,
+        source_data: *const *const libc::c_void,
         source_pitches: *const u32,
         destination_rect: *const VdpRect,
     ) -> VdpStatus,
@@ -599,15 +602,15 @@ pub type VdpOutputSurfacePutBitsNative = ::std::option::Option<
 /// and target color data. See \ref VdpColorTableFormat for
 /// details regarding the memory layout.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpOutputSurfacePutBitsIndexed = ::std::option::Option<
+pub type VdpOutputSurfacePutBitsIndexed = Option<
     unsafe extern "C" fn(
         surface: VdpOutputSurface,
         source_indexed_format: VdpIndexedFormat,
-        source_data: *const *const ::std::os::raw::c_void,
+        source_data: *const *const libc::c_void,
         source_pitch: *const u32,
         destination_rect: *const VdpRect,
         color_table_format: VdpColorTableFormat,
-        color_table: *const ::std::os::raw::c_void,
+        color_table: *const libc::c_void,
     ) -> VdpStatus,
 >;
 /// \brief Copy image data from application memory in a specific
@@ -633,11 +636,11 @@ pub type VdpOutputSurfacePutBitsIndexed = ::std::option::Option<
 /// be used internally. Th default matrix is equivalent to
 /// ITU-R BT.601 with no procamp changes.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpOutputSurfacePutBitsYCbCr = ::std::option::Option<
+pub type VdpOutputSurfacePutBitsYCbCr = Option<
     unsafe extern "C" fn(
         surface: VdpOutputSurface,
         source_ycbcr_format: VdpYCbCrFormat,
-        source_data: *const *const ::std::os::raw::c_void,
+        source_data: *const *const libc::c_void,
         source_pitches: *const u32,
         destination_rect: *const VdpRect,
         csc_matrix: *const VdpCSCMatrix,
@@ -654,7 +657,7 @@ pub type VdpOutputSurfacePutBitsYCbCr = ::std::option::Option<
 /// \param[out] max_height The maximum supported surface height
 /// for this chroma type.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpBitmapSurfaceQueryCapabilities = ::std::option::Option<
+pub type VdpBitmapSurfaceQueryCapabilities = Option<
     unsafe extern "C" fn(
         device: VdpDevice,
         surface_rgba_format: VdpRGBAFormat,
@@ -681,7 +684,7 @@ pub type VdpBitmapSurface = u32;
 /// The memory backing the surface may not be initialized
 /// during creation. Applications are expected initialize any
 /// region that they use, via \ref VdpBitmapSurfacePutBitsNative.
-pub type VdpBitmapSurfaceCreate = ::std::option::Option<
+pub type VdpBitmapSurfaceCreate = Option<
     unsafe extern "C" fn(
         device: VdpDevice,
         rgba_format: VdpRGBAFormat,
@@ -695,7 +698,7 @@ pub type VdpBitmapSurfaceCreate = ::std::option::Option<
 /// \param[in] surface The surface's handle.
 /// \return VdpStatus The completion status of the operation.
 pub type VdpBitmapSurfaceDestroy =
-    ::std::option::Option<unsafe extern "C" fn(surface: VdpBitmapSurface) -> VdpStatus>;
+    Option<unsafe extern "C" fn(surface: VdpBitmapSurface) -> VdpStatus>;
 /// \brief Retrieve the parameters used to create a
 /// VdpBitmapSurface.
 /// \param[in] surface The surface's handle.
@@ -705,7 +708,7 @@ pub type VdpBitmapSurfaceDestroy =
 /// \param[out] frequently_accessed The frequently_accessed state
 /// of the surface.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpBitmapSurfaceGetParameters = ::std::option::Option<
+pub type VdpBitmapSurfaceGetParameters = Option<
     unsafe extern "C" fn(
         surface: VdpBitmapSurface,
         rgba_format: *mut VdpRGBAFormat,
@@ -731,10 +734,10 @@ pub type VdpBitmapSurfaceGetParameters = ::std::option::Option<
 /// to fill with application data. If NULL, the entire
 /// surface will be updated.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpBitmapSurfacePutBitsNative = ::std::option::Option<
+pub type VdpBitmapSurfacePutBitsNative = Option<
     unsafe extern "C" fn(
         surface: VdpBitmapSurface,
-        source_data: *const *const ::std::os::raw::c_void,
+        source_data: *const *const libc::c_void,
         source_pitches: *const u32,
         destination_rect: *const VdpRect,
     ) -> VdpStatus,
@@ -763,7 +766,7 @@ pub const VDP_OUTPUT_SURFACE_RENDER_BLEND_FACTOR_CONSTANT_ALPHA: VdpOutputSurfac
     13;
 pub const VDP_OUTPUT_SURFACE_RENDER_BLEND_FACTOR_ONE_MINUS_CONSTANT_ALPHA:
     VdpOutputSurfaceRenderBlendFactor = 14;
-pub type VdpOutputSurfaceRenderBlendFactor = ::std::os::raw::c_uint;
+pub type VdpOutputSurfaceRenderBlendFactor = libc::c_uint;
 pub const VDP_OUTPUT_SURFACE_RENDER_BLEND_EQUATION_SUBTRACT: VdpOutputSurfaceRenderBlendEquation =
     0;
 pub const VDP_OUTPUT_SURFACE_RENDER_BLEND_EQUATION_REVERSE_SUBTRACT:
@@ -771,7 +774,7 @@ pub const VDP_OUTPUT_SURFACE_RENDER_BLEND_EQUATION_REVERSE_SUBTRACT:
 pub const VDP_OUTPUT_SURFACE_RENDER_BLEND_EQUATION_ADD: VdpOutputSurfaceRenderBlendEquation = 2;
 pub const VDP_OUTPUT_SURFACE_RENDER_BLEND_EQUATION_MIN: VdpOutputSurfaceRenderBlendEquation = 3;
 pub const VDP_OUTPUT_SURFACE_RENDER_BLEND_EQUATION_MAX: VdpOutputSurfaceRenderBlendEquation = 4;
-pub type VdpOutputSurfaceRenderBlendEquation = ::std::os::raw::c_uint;
+pub type VdpOutputSurfaceRenderBlendEquation = libc::c_uint;
 /// \brief Complete blending operation definition.
 ///
 /// A "blend state" operation controls the math behind certain rendering
@@ -870,7 +873,7 @@ pub struct VdpOutputSurfaceRenderBlendState {
 /// size of destination_rect and composited with
 /// destination_surface using the provided blend state.
 ///
-pub type VdpOutputSurfaceRenderOutputSurface = ::std::option::Option<
+pub type VdpOutputSurfaceRenderOutputSurface = Option<
     unsafe extern "C" fn(
         destination_surface: VdpOutputSurface,
         destination_rect: *const VdpRect,
@@ -949,7 +952,7 @@ pub type VdpOutputSurfaceRenderOutputSurface = ::std::option::Option<
 /// size of destination_rect and composited with
 /// destination_surface using the provided blend state.
 ///
-pub type VdpOutputSurfaceRenderBitmapSurface = ::std::option::Option<
+pub type VdpOutputSurfaceRenderBitmapSurface = Option<
     unsafe extern "C" fn(
         destination_surface: VdpOutputSurface,
         destination_rect: *const VdpRect,
@@ -979,7 +982,7 @@ pub type VdpDecoderProfile = u32;
 /// profile. Note that this could be greater than that dictated by the
 /// maximum level.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpDecoderQueryCapabilities = ::std::option::Option<
+pub type VdpDecoderQueryCapabilities = Option<
     unsafe extern "C" fn(
         device: VdpDevice,
         profile: VdpDecoderProfile,
@@ -1006,7 +1009,7 @@ pub type VdpDecoder = u32;
 /// fail.
 /// \param[out] decoder The new decoder's handle.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpDecoderCreate = ::std::option::Option<
+pub type VdpDecoderCreate = Option<
     unsafe extern "C" fn(
         device: VdpDevice,
         profile: VdpDecoderProfile,
@@ -1020,7 +1023,7 @@ pub type VdpDecoderCreate = ::std::option::Option<
 /// \param[in] surface The decoder's handle.
 /// \return VdpStatus The completion status of the operation.
 pub type VdpDecoderDestroy =
-    ::std::option::Option<unsafe extern "C" fn(decoder: VdpDecoder) -> VdpStatus>;
+    Option<unsafe extern "C" fn(decoder: VdpDecoder) -> VdpStatus>;
 /// \brief Retrieve the parameters used to create a
 /// VdpDecoder.
 /// \param[in] surface The surface's handle.
@@ -1031,7 +1034,7 @@ pub type VdpDecoderDestroy =
 /// \param[out] height The height of surfaces decode by the
 /// decoder
 /// \return VdpStatus The completion status of the operation.
-pub type VdpDecoderGetParameters = ::std::option::Option<
+pub type VdpDecoderGetParameters = Option<
     unsafe extern "C" fn(
         decoder: VdpDecoder,
         profile: *mut VdpDecoderProfile,
@@ -1047,7 +1050,7 @@ pub struct VdpBitstreamBuffer {
     /// This field must be filled with VDP_BITSTREAM_BUFFER_VERSION
     pub struct_version: u32,
     /// A pointer to the bitstream data bytes
-    pub bitstream: *const ::std::os::raw::c_void,
+    pub bitstream: *const libc::c_void,
     /// The number of data bytes
     pub bitstream_bytes: u32,
 }
@@ -1059,7 +1062,7 @@ pub struct VdpBitstreamBuffer {
 /// instance of one of the "real" VdpPictureInfo* structures,
 /// picking the type appropriate for the decoder object in
 /// question.
-pub type VdpPictureInfo = *mut ::std::os::raw::c_void;
+pub type VdpPictureInfo = *mut libc::c_void;
 /// \brief Picture parameter information for an MPEG 1 or MPEG 2
 /// picture.
 ///
@@ -1369,7 +1372,7 @@ pub type VdpPictureInfoDivX5 = VdpPictureInfoMPEG4Part2;
 /// \return VdpStatus The completion status of the operation.
 ///
 /// See \ref video_mixer_usage for additional information.
-pub type VdpDecoderRender = ::std::option::Option<
+pub type VdpDecoderRender = Option<
     unsafe extern "C" fn(
         decoder: VdpDecoder,
         target: VdpVideoSurface,
@@ -1430,7 +1433,7 @@ pub type VdpVideoMixerAttribute = u32;
 /// queried.
 /// \param[out] is_supported Is the specified feature supported?
 /// \return VdpStatus The completion status of the operation.
-pub type VdpVideoMixerQueryFeatureSupport = ::std::option::Option<
+pub type VdpVideoMixerQueryFeatureSupport = Option<
     unsafe extern "C" fn(
         device: VdpDevice,
         feature: VdpVideoMixerFeature,
@@ -1445,7 +1448,7 @@ pub type VdpVideoMixerQueryFeatureSupport = ::std::option::Option<
 /// \param[out] is_supported Is the specified parameter
 /// supported?
 /// \return VdpStatus The completion status of the operation.
-pub type VdpVideoMixerQueryParameterSupport = ::std::option::Option<
+pub type VdpVideoMixerQueryParameterSupport = Option<
     unsafe extern "C" fn(
         device: VdpDevice,
         parameter: VdpVideoMixerParameter,
@@ -1459,7 +1462,7 @@ pub type VdpVideoMixerQueryParameterSupport = ::std::option::Option<
 /// queried.
 /// \param[out] is_supported Is the specified feature supported?
 /// \return VdpStatus The completion status of the operation.
-pub type VdpVideoMixerQueryAttributeSupport = ::std::option::Option<
+pub type VdpVideoMixerQueryAttributeSupport = Option<
     unsafe extern "C" fn(
         device: VdpDevice,
         attribute: VdpVideoMixerAttribute,
@@ -1474,12 +1477,12 @@ pub type VdpVideoMixerQueryAttributeSupport = ::std::option::Option<
 /// \param[out] min_value The minimum supported value.
 /// \param[out] max_value The maximum supported value.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpVideoMixerQueryParameterValueRange = ::std::option::Option<
+pub type VdpVideoMixerQueryParameterValueRange = Option<
     unsafe extern "C" fn(
         device: VdpDevice,
         parameter: VdpVideoMixerParameter,
-        min_value: *mut ::std::os::raw::c_void,
-        max_value: *mut ::std::os::raw::c_void,
+        min_value: *mut libc::c_void,
+        max_value: *mut libc::c_void,
     ) -> VdpStatus,
 >;
 /// \brief Query the implementation's supported for a specific
@@ -1490,12 +1493,12 @@ pub type VdpVideoMixerQueryParameterValueRange = ::std::option::Option<
 /// \param[out] min_value The minimum supported value.
 /// \param[out] max_value The maximum supported value.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpVideoMixerQueryAttributeValueRange = ::std::option::Option<
+pub type VdpVideoMixerQueryAttributeValueRange = Option<
     unsafe extern "C" fn(
         device: VdpDevice,
         attribute: VdpVideoMixerAttribute,
-        min_value: *mut ::std::os::raw::c_void,
-        max_value: *mut ::std::os::raw::c_void,
+        min_value: *mut libc::c_void,
+        max_value: *mut libc::c_void,
     ) -> VdpStatus,
 >;
 /// \brief An opaque handle representing a VdpVideoMixer object.
@@ -1518,14 +1521,14 @@ pub type VdpVideoMixer = u32;
 ///
 /// Initially, all attributes will have default values. Values
 /// can be changed using \ref VdpVideoMixerSetAttributeValues.
-pub type VdpVideoMixerCreate = ::std::option::Option<
+pub type VdpVideoMixerCreate = Option<
     unsafe extern "C" fn(
         device: VdpDevice,
         feature_count: u32,
         features: *const VdpVideoMixerFeature,
         parameter_count: u32,
         parameters: *const VdpVideoMixerParameter,
-        parameter_values: *const *const ::std::os::raw::c_void,
+        parameter_values: *const *const libc::c_void,
         mixer: *mut VdpVideoMixer,
     ) -> VdpStatus,
 >;
@@ -1537,7 +1540,7 @@ pub type VdpVideoMixerCreate = ::std::option::Option<
 /// \param[in] feature_enables The list of new feature enable
 /// values.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpVideoMixerSetFeatureEnables = ::std::option::Option<
+pub type VdpVideoMixerSetFeatureEnables = Option<
     unsafe extern "C" fn(
         mixer: VdpVideoMixer,
         feature_count: u32,
@@ -1555,12 +1558,12 @@ pub type VdpVideoMixerSetFeatureEnables = ::std::option::Option<
 /// "inside" the array. A NULL pointer requests that the default value be
 /// set for that attribute.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpVideoMixerSetAttributeValues = ::std::option::Option<
+pub type VdpVideoMixerSetAttributeValues = Option<
     unsafe extern "C" fn(
         mixer: VdpVideoMixer,
         attribute_count: u32,
         attributes: *const VdpVideoMixerAttribute,
-        attribute_values: *const *const ::std::os::raw::c_void,
+        attribute_values: *const *const libc::c_void,
     ) -> VdpStatus,
 >;
 /// \brief Retrieve whether features were requested at creation
@@ -1572,7 +1575,7 @@ pub type VdpVideoMixerSetAttributeValues = ::std::option::Option<
 /// whether the feature was requested, and hence is
 /// available.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpVideoMixerGetFeatureSupport = ::std::option::Option<
+pub type VdpVideoMixerGetFeatureSupport = Option<
     unsafe extern "C" fn(
         mixer: VdpVideoMixer,
         feature_count: u32,
@@ -1587,7 +1590,7 @@ pub type VdpVideoMixerGetFeatureSupport = ::std::option::Option<
 /// \param[out] feature_enabled A list of values indicating
 /// whether the feature is enabled.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpVideoMixerGetFeatureEnables = ::std::option::Option<
+pub type VdpVideoMixerGetFeatureEnables = Option<
     unsafe extern "C" fn(
         mixer: VdpVideoMixer,
         feature_count: u32,
@@ -1605,12 +1608,12 @@ pub type VdpVideoMixerGetFeatureEnables = ::std::option::Option<
 /// a pointer itself, please closely read the documentation for that
 /// attribute type for any other data passing requirements.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpVideoMixerGetParameterValues = ::std::option::Option<
+pub type VdpVideoMixerGetParameterValues = Option<
     unsafe extern "C" fn(
         mixer: VdpVideoMixer,
         parameter_count: u32,
         parameters: *const VdpVideoMixerParameter,
-        parameter_values: *const *const ::std::os::raw::c_void,
+        parameter_values: *const *const libc::c_void,
     ) -> VdpStatus,
 >;
 /// \brief Retrieve current attribute values.
@@ -1623,23 +1626,23 @@ pub type VdpVideoMixerGetParameterValues = ::std::option::Option<
 /// a pointer itself, please closely read the documentation for that
 /// attribute type for any other data passing requirements.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpVideoMixerGetAttributeValues = ::std::option::Option<
+pub type VdpVideoMixerGetAttributeValues = Option<
     unsafe extern "C" fn(
         mixer: VdpVideoMixer,
         attribute_count: u32,
         attributes: *const VdpVideoMixerAttribute,
-        attribute_values: *const *const ::std::os::raw::c_void,
+        attribute_values: *const *const libc::c_void,
     ) -> VdpStatus,
 >;
 /// \brief Destroy a VdpVideoMixer.
 /// \param[in] device The device to destroy.
 /// \return VdpStatus The completion status of the operation.
 pub type VdpVideoMixerDestroy =
-    ::std::option::Option<unsafe extern "C" fn(mixer: VdpVideoMixer) -> VdpStatus>;
+    Option<unsafe extern "C" fn(mixer: VdpVideoMixer) -> VdpStatus>;
 pub const VDP_VIDEO_MIXER_PICTURE_STRUCTURE_TOP_FIELD: VdpVideoMixerPictureStructure = 0;
 pub const VDP_VIDEO_MIXER_PICTURE_STRUCTURE_BOTTOM_FIELD: VdpVideoMixerPictureStructure = 1;
 pub const VDP_VIDEO_MIXER_PICTURE_STRUCTURE_FRAME: VdpVideoMixerPictureStructure = 2;
-pub type VdpVideoMixerPictureStructure = ::std::os::raw::c_uint;
+pub type VdpVideoMixerPictureStructure = libc::c_uint;
 /// \brief Definition of an additional \ref VdpOutputSurface
 /// "VdpOutputSurface" layer in the composting model.
 #[repr(C)]
@@ -1724,7 +1727,7 @@ pub struct VdpLayer {
 ///
 /// For a complete discussion of how to use this API, please see
 /// \ref video_mixer_usage.
-pub type VdpVideoMixerRender = ::std::option::Option<
+pub type VdpVideoMixerRender = Option<
     unsafe extern "C" fn(
         mixer: VdpVideoMixer,
         background_surface: VdpOutputSurface,
@@ -1763,7 +1766,7 @@ pub type VdpPresentationQueueTarget = u32;
 /// \brief Destroy a VdpPresentationQueueTarget.
 /// \param[in] presentation_queue_target The target to destroy.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpPresentationQueueTargetDestroy = ::std::option::Option<
+pub type VdpPresentationQueueTargetDestroy = Option<
     unsafe extern "C" fn(presentation_queue_target: VdpPresentationQueueTarget) -> VdpStatus,
 >;
 /// \brief An opaque handle representing a presentation queue
@@ -1778,7 +1781,7 @@ pub type VdpPresentationQueue = u32;
 ///
 /// Note: The initial value for the background color will be set to
 /// an implementation-defined value.
-pub type VdpPresentationQueueCreate = ::std::option::Option<
+pub type VdpPresentationQueueCreate = Option<
     unsafe extern "C" fn(
         device: VdpDevice,
         presentation_queue_target: VdpPresentationQueueTarget,
@@ -1788,7 +1791,7 @@ pub type VdpPresentationQueueCreate = ::std::option::Option<
 /// \brief Destroy a VdpPresentationQueue.
 /// \param[in] presentation_queue The queue to destroy.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpPresentationQueueDestroy = ::std::option::Option<
+pub type VdpPresentationQueueDestroy = Option<
     unsafe extern "C" fn(presentation_queue: VdpPresentationQueue) -> VdpStatus,
 >;
 /// \brief Configure the background color setting.
@@ -1798,7 +1801,7 @@ pub type VdpPresentationQueueDestroy = ::std::option::Option<
 /// Note: Implementations may choose whether to apply the
 /// new background color value immediately, or defer it until
 /// the next surface is presented.
-pub type VdpPresentationQueueSetBackgroundColor = ::std::option::Option<
+pub type VdpPresentationQueueSetBackgroundColor = Option<
     unsafe extern "C" fn(
         presentation_queue: VdpPresentationQueue,
         background_color: *const VdpColor,
@@ -1807,7 +1810,7 @@ pub type VdpPresentationQueueSetBackgroundColor = ::std::option::Option<
 /// \brief Retrieve the current background color setting.
 /// \param[in] presentation_queue The queue to query.
 /// \param[out] background_color The current background color.
-pub type VdpPresentationQueueGetBackgroundColor = ::std::option::Option<
+pub type VdpPresentationQueueGetBackgroundColor = Option<
     unsafe extern "C" fn(presentation_queue: VdpPresentationQueue, background_color: *mut VdpColor)
         -> VdpStatus,
 >;
@@ -1816,7 +1819,7 @@ pub type VdpPresentationQueueGetBackgroundColor = ::std::option::Option<
 /// \param[out] current_time The current time, which may
 /// represent a point between display VSYNC events.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpPresentationQueueGetTime = ::std::option::Option<
+pub type VdpPresentationQueueGetTime = Option<
     unsafe extern "C" fn(presentation_queue: VdpPresentationQueue, current_time: *mut VdpTime)
         -> VdpStatus,
 >;
@@ -1858,7 +1861,7 @@ pub type VdpPresentationQueueGetTime = ::std::option::Option<
 /// QUEUED or VISIBLE state only. In other words, entries that have
 /// transitioned from a QUEUED or VISIBLE state to an IDLE state do not count
 /// toward this limit.
-pub type VdpPresentationQueueDisplay = ::std::option::Option<
+pub type VdpPresentationQueueDisplay = Option<
     unsafe extern "C" fn(
         presentation_queue: VdpPresentationQueue,
         surface: VdpOutputSurface,
@@ -1880,7 +1883,7 @@ pub type VdpPresentationQueueDisplay = ::std::option::Option<
 /// other surface that could possibly replace that surface as the currently
 /// displayed surface, and hence that surface would never become idle. For
 /// that reason, this function will return an error in that case.
-pub type VdpPresentationQueueBlockUntilSurfaceIdle = ::std::option::Option<
+pub type VdpPresentationQueueBlockUntilSurfaceIdle = Option<
     unsafe extern "C" fn(
         presentation_queue: VdpPresentationQueue,
         surface: VdpOutputSurface,
@@ -1890,7 +1893,7 @@ pub type VdpPresentationQueueBlockUntilSurfaceIdle = ::std::option::Option<
 pub const VDP_PRESENTATION_QUEUE_STATUS_IDLE: VdpPresentationQueueStatus = 0;
 pub const VDP_PRESENTATION_QUEUE_STATUS_QUEUED: VdpPresentationQueueStatus = 1;
 pub const VDP_PRESENTATION_QUEUE_STATUS_VISIBLE: VdpPresentationQueueStatus = 2;
-pub type VdpPresentationQueueStatus = ::std::os::raw::c_uint;
+pub type VdpPresentationQueueStatus = libc::c_uint;
 /// \brief Poll the current queue status of a surface.
 /// \param[in] presentation_queue The queue to query.
 /// \param[in] surface The surface to query.
@@ -1900,7 +1903,7 @@ pub type VdpPresentationQueueStatus = ::std::os::raw::c_uint;
 /// VSYNC at which this surface was first displayed. Note
 /// that 0 means the surface was never displayed.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpPresentationQueueQuerySurfaceStatus = ::std::option::Option<
+pub type VdpPresentationQueueQuerySurfaceStatus = Option<
     unsafe extern "C" fn(
         presentation_queue: VdpPresentationQueue,
         surface: VdpOutputSurface,
@@ -1914,8 +1917,8 @@ pub type VdpPresentationQueueQuerySurfaceStatus = ::std::option::Option<
 /// \param[in] context The client-supplied callback context
 /// information.
 /// \return void No return value
-pub type VdpPreemptionCallback = ::std::option::Option<
-    unsafe extern "C" fn(device: VdpDevice, context: *mut ::std::os::raw::c_void),
+pub type VdpPreemptionCallback = Option<
+    unsafe extern "C" fn(device: VdpDevice, context: *mut libc::c_void),
 >;
 /// \brief Configure the display preemption callback.
 /// \param[in] device The device to be monitored for preemption.
@@ -1925,11 +1928,11 @@ pub type VdpPreemptionCallback = ::std::option::Option<
 /// information. This information will be passed to the
 /// callback function if/when invoked.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpPreemptionCallbackRegister = ::std::option::Option<
+pub type VdpPreemptionCallbackRegister = Option<
     unsafe extern "C" fn(
         device: VdpDevice,
         callback: VdpPreemptionCallback,
-        context: *mut ::std::os::raw::c_void,
+        context: *mut libc::c_void,
     ) -> VdpStatus,
 >;
 /// \brief A type suitable for \ref VdpGetProcAddress
@@ -1942,11 +1945,11 @@ pub type VdpFuncId = u32;
 /// \param[out] function_pointer The actual pointer for the
 /// application to call.
 /// \return VdpStatus The completion status of the operation.
-pub type VdpGetProcAddress = ::std::option::Option<
+pub type VdpGetProcAddress = Option<
     unsafe extern "C" fn(
         device: VdpDevice,
         function_id: VdpFuncId,
-        function_pointer: *mut *mut ::std::os::raw::c_void,
+        function_pointer: *mut *mut libc::c_void,
     ) -> VdpStatus,
 >;
 

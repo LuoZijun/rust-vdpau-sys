@@ -11,4 +11,6 @@ documentation = "https://docs.rs/vdpau-sys"
 
 [dependencies]
 libc = "0.2"
+
+[target.'cfg(any(target_os = "linux", target_os = "freebsd", target_os = "openbsd", target_os = "netbsd"))'.dependencies]
 x11 = { version = "2.18", features = [ "xlib" ] }

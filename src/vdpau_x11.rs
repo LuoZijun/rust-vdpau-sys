@@ -1,4 +1,4 @@
-use crate::libc::{c_int};
+use crate::libc::c_int;
 use crate::x11::xlib::{ Display, Drawable, };
 
 use crate::vdpau::{
@@ -6,8 +6,6 @@ use crate::vdpau::{
     VdpDevice, VdpGetProcAddress,
     VdpPresentationQueueTarget,
 };
-
-// #[link("libvdpau")]
 
 
 /// \brief Create a VdpDevice object for use with X11.
