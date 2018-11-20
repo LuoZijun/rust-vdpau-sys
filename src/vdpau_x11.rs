@@ -23,11 +23,6 @@ pub type VdpDeviceCreateX11 = Option<
     ) -> VdpStatus,
 >;
 
-/// \brief Create a VdpDevice object for use with X11.
-/// This is an actual symbol of type \ref VdpDeviceCreateX11
-pub type vdp_device_create_x11 = VdpDeviceCreateX11;
-
-
 /// \brief Create a VdpPresentationQueueTarget for use with X11.
 /// \param[in] device The device that will contain the queue target.
 /// \param[in] drawable The X11 Drawable that the presentation queue will present into.
@@ -53,4 +48,10 @@ pub type VdpPresentationQueueTargetCreateX11 = Option<
 >;
 
 
+#[link(name="vdpau", kind="dylib")]
+extern "C" {
+    /// \brief Create a VdpDevice object for use with X11.
+    /// This is an actual symbol of type \ref VdpDeviceCreateX11
+    pub static vdp_device_create_x11: VdpDeviceCreateX11;
+}
 

@@ -7,6 +7,17 @@ rust-vdpau-sys
 .. contents::
 
 
+Build
+--------------
+
+.. code:: bash
+    
+    # Debian
+    sudo apt install libx11-6 libx11-dev
+    sudo apt install libvdpau1 libvdpau-dev vdpau-driver-all vdpau-va-driver vdpauinfo
+    
+
+
 
 Nvidia VDPAU ( Video Decode and Presentation API for Unix )
 ---------------------------------------------------------------------
